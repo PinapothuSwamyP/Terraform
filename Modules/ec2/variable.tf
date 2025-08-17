@@ -14,7 +14,7 @@ variable "subnet_id" {
   type        = string
 }
 
-variable "security_groups" {
+variable "security_groups_ids" {
   description = "List of Security Group IDs"
   type        = list(string)
   default     = []
