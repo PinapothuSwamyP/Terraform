@@ -39,4 +39,18 @@
       egress_rules  = var.egress_rules
       tags          = var.tags
    }
+
+   #============================================================
+   
+   module "webserver" {
+      source = "../../Modules/ec2"
+      ami_id = var.ami_id
+      instance_type = var.instance_type
+      subnet_id = var.subnet_id
+      security_groups = var.security_groups
+      key_name = var.key_name
+      tags = var.tags
+      instance_name = var.instance_name
+   
+   }
    
