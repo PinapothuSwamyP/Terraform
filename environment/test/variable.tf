@@ -92,11 +92,11 @@ variable "subnet_id" {
   type        = string
 }
 
-variable "security_groups" {
-  description = "List of Security Group IDs"
-  type        = list(string)
-  default     = []
-}
+# variable "security_groups" {
+#   description = "List of Security Group IDs"
+#   type        = list(string)
+#   default     = []
+# }
 
 variable "key_name" {
   description = "Key pair name for SSH"

@@ -47,7 +47,7 @@
       ami_id = var.ami_id
       instance_type = var.instance_type
       subnet_id = var.subnet_id
-      security_groups = var.security_groups
+      security_groups = [module.sg_name_module.security_group_id]
       key_name = var.key_name
       tags = var.web_tags
       instance_name = var.instance_name
