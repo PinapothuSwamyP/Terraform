@@ -43,13 +43,13 @@
    #============================================================
    
    module "webserver" {
-      source = "../../Modules/ec2"
+      source = "../../Modules/ec2"  
       ami_id = var.ami_id
       instance_type = var.instance_type
       subnet_id = var.subnet_id
       security_groups = var.security_groups
       key_name = var.key_name
-      tags = var.tags
+      tags = var.web_tags
       instance_name = var.instance_name
    
    }

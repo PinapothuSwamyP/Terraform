@@ -108,7 +108,7 @@ variable "instance_name" {
   type        = string
 }
 
-variable "tags" {
+variable "web_tags" {
   description = "Additional tags"
   type        = map(string)
   default     = {}

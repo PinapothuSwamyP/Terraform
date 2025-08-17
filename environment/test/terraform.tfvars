@@ -45,3 +45,7 @@ subnet_id = "subnet-08837f1649a487b2d"
 security_groups = [ "sg-08df0637335e27c42" ]
 key_name = "TestEnv_PublicKey"
 instance_name = "terr_webserver"
+web_tags = {
+    Environment = "test"
+  Project     = "test"
+}
